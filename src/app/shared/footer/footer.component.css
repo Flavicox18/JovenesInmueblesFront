@@ -1,0 +1,10 @@
+.footer{
+  height: 110px;
+  background-color: #012169; /* Cambia el color de fondo según tus preferencias */
+  color: white; /* Cambia el color del texto según tus preferencias */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

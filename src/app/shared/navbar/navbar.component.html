@@ -1,1 +1,33 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="../../../assets/img/Logo.png" alt="Logo de la empresa">
+  </div>
+
+  <div class="navbar-options">
+
+    <a class="navLink">
+      <img class="navIcon" src="../../../assets/img/contactanos.png" alt="Contactanos" >
+      <p class="navOpc"> Contactanos</p>
+    </a>
+    <a class="navLink">
+      <img class="navIcon" src="../../../assets/img/documento.png" alt="Articulos">
+      <p class="navOpc"> Articulos</p>
+    </a>
+    <a class="navLink">
+      <img class="navIcon" src="../../../assets/img/herramientas.png" alt="Herramientas">
+      <p class="navOpc"> Herramientas</p>
+    </a>
+
+    @if (UserLoginOn) {
+    <a class="navLink" >
+      <img class="navIcon" src="../../../assets/img/usuario.png" alt="Mi Perfil">
+      <p class="navOpc"> Mi Perfil</p>
+    </a>
+    } @else{
+    <a class="navLink" routerLink="/iniciarSesion">
+      <img class="navIcon" src="../../../assets/img/IniciarSesion.png" alt="Iniciar Sesion">
+      <p class="navOpc"> Iniciar Sesion</p>
+    </a>
+    }
+  </div>
+</nav>
