@@ -167,3 +167,10 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+.demas p{
+  margin: 5px 0;
+}
+.demas{
+  margin-top: 10px;
+}

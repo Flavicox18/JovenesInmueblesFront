@@ -1,0 +1,144 @@
+.main {
+  position: relative; /* Establece la posición relativa para permitir el posicionamiento absoluto del div .mainOpc */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.mainOpc {
+  position: absolute; /* Posiciona el div de forma absoluta */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 35%;
+  background-color: #00000099;
+  display: flex; /* Activa el modelo de caja flex */
+  flex-direction: column;
+  justify-content: center; /* Centra horizontalmente los elementos dentro de .mainOpc */
+  align-items: center; /* Centra verticalmente los elementos dentro de .mainOpc */
+  border-radius: 20px;
+}
+.mainOpc h1{
+  color: #fff;
+}
+.boton {
+  color: white; /* Cambia el color del texto del botón */
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  background-color: #d27b42; /* Cambia el color de fondo del botón */
+  border-radius: 10px; /* Añade bordes redondeados al botón */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.boton:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.7); /* Añade una ligera sombra al pasar el ratón por encima */
+}
+.boton:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.7); /* Añade una ligera sombra al pasar el ratón por encima */
+}
+
+/* Sección de Recomedaciones */
+.recomendaciones {
+  background-color: #DEAD00;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+  padding: 10px 0;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.recoInfo {
+  width: 25%; /* Ancho original en pantallas grandes */
+  text-align: justify;
+  margin-bottom: 10px; /* Espacio entre recoInfo y las cards */
+}
+
+.card {
+  width: 300px; /* Ancho original en pantallas grandes */
+  max-height: 300px; /* Altura máxima del card */
+  margin: 0 10px; /* Espacio entre las cards */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Espacio entre las cards */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 225px;
+}
+
+.card .details {
+  padding: 5px;
+  text-align: left;
+}
+
+.card .details p {
+  margin: 3px 0;
+}
+
+/* Media query para cambiar a columnas en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .recomendaciones {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en la columna */
+  }
+
+  .recoInfo {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espacio entre recoInfo y las cards */
+  }
+
+  .card {
+    width: calc(100% - 20px); /* Ocupa todo el ancho disponible con un margen */
+    margin: 0 10px 20px; /* Espacio entre las cards */
+  }
+}
+/* Seccion de Informacion*/
+.informacion {
+  text-align: center;
+}
+
+.ayudas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  align-content: center;
+
+}
+
+.opc {
+  max-width: 225px;
+}
+
+.opc img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+/* Media queries para ajustar la disposición en dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  .ayudas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ayudas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
