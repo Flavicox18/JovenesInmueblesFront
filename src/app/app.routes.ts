@@ -8,8 +8,18 @@ export const routes: Routes = [
 
   },
   {
+<<<<<<< Updated upstream
     path: 'registrarse',
     title: 'Registrarse',
+=======
+    path: 'login',
+    title: 'Login',
+    loadComponent: () => import('./auth/login/login.component'),
+  },
+  {
+    path: 'register',
+    title: 'Register',
+>>>>>>> Stashed changes
     loadComponent: () => import('./auth/register/register.component'),
   },
   {
@@ -43,6 +53,30 @@ export const routes: Routes = [
     loadComponent: ()=> import('./pages/agentes/gestionar-agentes/gestionar-agentes.component'),
   },
   
+  {
+    path: 'perfilAgente',
+    title: 'Perfil Agente',
+    loadComponent: () => import('./pages/perfilagente/perfilagente.component'),
+  },
+
+  {
+    path: 'gestionarPropiedades',
+    title: 'Gestionar Propiedades',
+    loadComponent: () => import('./pages/gestionarPropiedades/gestionarPropiedades.component'),
+  },
+
+  {
+    path: 'agregarPropiedades',
+    title: 'Agregar Propiedades',
+    loadComponent: () => import('./pages/agregarPropiedades/agregarPropiedades.component'),
+  },
+
+  {
+    path: 'modificarPropiedades',
+    title: 'Modificar Propiedades',
+    loadComponent: () => import('./pages/modificarPropiedades/modificarPropiedades.component'),
+  },
+
   {
     path: '',
     redirectTo: '/index',

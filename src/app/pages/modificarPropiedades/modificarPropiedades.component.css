@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  text-decoration: underline;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-button {
+  padding: 10px 20px;
+  background-color: #012169;
+  color: white;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header-button:hover {
+  background-color: #838586;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.checkbox-group,
+.other-commodities {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.other-commodities input[type="text"] {
+  flex-grow: 1;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #012169;
+  color: white;
+  border:black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #8e8f91;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar Propiedades</title>
+    <link rel="stylesheet" href="modificarPropiedades.component.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Propiedades</h1>
+        <div class="header-buttons">
+            <button type="button" class="header-button left-button">Contenido de la propiedad</button>
+            <button type="button" class="header-button right-button">Galería de la propiedad</button>
+        </div>
+        <hr>
+        <form action="/submit-form" method="post">
+            <div class="form-group">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion" name="ubicacion">
+            </div>
+            <div class="form-group">
+                <label for="costo">Costo Inicial</label>
+                <input type="text" id="costo" name="costo">
+            </div>
+            <div class="form-group">
+                <label for="area">Área Terreno</label>
+                <input type="text" id="area" name="area">
+            </div>
+            <div class="form-group">
+                <label for="dormitorios">Cantidad de Dormitorios</label>
+                <select id="dormitorios" name="dormitorios">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="banos">Cantidad de Baños</label>
+                <select id="banos" name="banos">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Comodidades</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="garage" name="garage">
+                    <label for="garage">Garage</label>
+                    <input type="checkbox" id="piscina" name="piscina">
+                    <label for="piscina">Piscina</label>
+                    <input type="checkbox" id="terraza" name="terraza">
+                    <label for="terraza">Terraza</label>
+                    <input type="checkbox" id="seguridad" name="seguridad">
+                    <label for="seguridad">Seguridad</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Otras comodidades</label>
+                <div class="other-commodities">
+                    <input type="checkbox" id="otrasComodidades" name="otrasComodidades">
+                    <input type="text" id="otrasComodidadesDescripcion" name="otrasComodidadesDescripcion" placeholder="Describa otras comodidades">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción del Inmueble</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+</body>
+</html>
+

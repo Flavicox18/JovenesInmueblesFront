@@ -1,0 +1,141 @@
+.container {
+
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el padding */
+ background-color: rgb(255, 255, 255);
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.property-status {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px; /* Ajusta el margen superior */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+
+
+.property-status p {
+  margin-top: 5px; /* Espacio entre los elementos de la sección de propiedades */
+  margin-left: 20px; /* Desplazamiento hacia la izquierda */
+}
+
+.divider {
+  border-top: 1px solid black;
+  width: 100%; /* Ancho reducido para la línea divisoria */
+  max-width: 250px; /* Establece un ancho máximo para la línea divisoria */
+  border-top: 2px solid black; /* Ajusta el grosor de la línea */
+  margin-left: 20px;
+}
+
+.add-property-button {
+  position: absolute; /* Cambiamos a posicionamiento absoluto */
+  top: calc(100% + -790px); /* Alineamos el botón a la parte inferior del contenedor */
+  right: 100px; /* Lo alineamos a la derecha del contenedor */
+  padding: 20px 50px;
+  background-color: #012169;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+.new-container {
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0; /* Elimina el margen */
+
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 500px; /* Tamaño máximo de las imágenes */
+  margin: 30px; /* Separación entre las imágenes */
+  margin-top: 150px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center; /* Alinea el texto del estado al centro */
+}
+
+.status {
+  position: absolute;
+  bottom: -20px; /* Ajusta la distancia desde la parte inferior de la imagen */
+  left: -200px;
+  top: 380px;
+  width: 100%; /* Ajusta el ancho del estado para que coincida con la imagen */
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+
+}
+
+.precio {
+  position: absolute;
+  bottom: -20px; /* Ajusta la distancia desde la parte inferior de la imagen */
+  left: 200px;
+  top: 380px;
+  width: 100%; /* Ajusta el ancho del estado para que coincida con la imagen */
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+
+.extra-info {
+  position: absolute;
+  bottom: -110px; /* Ajusta la distancia desde la parte inferior de la imagen */
+  right: 110px;
+  width: 100%; /* Ajusta el ancho del estado para que coincida con la imagen */
+  font-weight: bold;
+}
+
+
+/* Agrega estos estilos para los botones */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.edit-button,
+.view-button,
+.agents-button {
+  padding: 10px 20px;
+  background-color: #012169;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: -150px;
+
+}
+
+.edit-button {
+  margin-right: 10px;
+}
+
+.view-button {
+  margin: 0 10px;
+}
+
+.agents-button {
+  margin-left: 10px;
+}
