@@ -8,18 +8,9 @@ export const routes: Routes = [
 
   },
   {
-<<<<<<< Updated upstream
-    path: 'registrarse',
-    title: 'Registrarse',
-=======
-    path: 'login',
-    title: 'Login',
-    loadComponent: () => import('./auth/login/login.component'),
-  },
-  {
     path: 'register',
     title: 'Register',
->>>>>>> Stashed changes
+
     loadComponent: () => import('./auth/register/register.component'),
   },
   {

@@ -1,1 +1,51 @@
-<p>agregar-agentes works!</p>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Agentes</title>
+    <link rel="stylesheet" href="agregar-agentes.component.css">
+</head>
+
+<h1>Agregar Agentes</h1>
+
+
+<body>
+    <div class="container">
+        <h2>Agregue la  Información 📙</h2>
+        <form action="/submit-your-form-handler" method="POST">
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo">
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+            </div>
+            <div class="form-group">
+                <label for="contacto">Número de Contacto</label>
+                <input type="text" id="contacto" name="contacto">
+            </div>
+            <div class="form-group">
+                <label for="foto">Agregar Foto</label>
+                <input type="file" id="foto" name="foto">
+
+            </div>
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+</body>
+
+</html>

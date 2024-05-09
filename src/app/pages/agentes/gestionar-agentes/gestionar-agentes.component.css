@@ -18,11 +18,11 @@
 }
 
 .col-md-4 {
-    flex: 0 0 33.333%; /* Toma el 33.333% del ancho total */
+    flex: 0 0 27.333%; /* Toma el 33.333% del ancho total */
 }
 
 .col-md-8 {
-    flex: 0 0 66.667%; /* Toma el 66.667% del ancho total */
+    flex: 0 0 69.667%; /* Toma el 66.667% del ancho total */
     padding-left: 0px; /* Agrega espacio entre la imagen y el texto */
 }
 .boton-izquierda {
@@ -35,4 +35,63 @@
     font-size: 21px;
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 
+}
+
+/* PARA LAS 6 IMAGENES*/
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-imagenes img {
+    width: 200px;
+    height: 244px;
+    margin: 10px;
+}
+
+/* te extraño :(*/
+.subemelaradioqestaesmicancion-izquierda {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 21px;
+}
+.subemelaradioqestaesmicancion-centro {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: -200px; /* Ajuste negativo del margen superior para elevar el texto */
+    font-size: 21px;
+
+}
+.subemelaradioqestaesmicancion-derecho {
+    text-align: right; 
+    margin-top: -200px; /* pepe*/
+    font-size: 21px;
+
+}
+
+.boton-editar {
+    background-color: #D9D9D9;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto; /* Margen automático en los lados para centrar horizontalmente */   
+}
+.boton-central {
+    background-color: #D9D9D9;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Margen automático en los lados para centrar horizontalmente */   
+}
+
+.boton-editar:hover {
+    background-color: #B3B3B3; /* Cambia el color de fondo al pasar el cursor */
 }
