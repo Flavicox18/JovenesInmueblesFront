@@ -1,0 +1,38 @@
+.main {
+    position: relative; /* Establece la posición relativa para permitir el posicionamiento absoluto del div .mainOpc */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+.textodebajodeltitulo {
+    font-size: 20px;
+}
+.main {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+.container {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una fila */
+}
+
+.col-md-4 {
+    flex: 0 0 33.333%; /* Toma el 33.333% del ancho total */
+}
+
+.col-md-8 {
+    flex: 0 0 66.667%; /* Toma el 66.667% del ancho total */
+    padding-left: 0px; /* Agrega espacio entre la imagen y el texto */
+}
+.boton-izquierda {
+    background-color: #012169;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5%;
+    margin-right: auto; /* Alinea el botón a la izquierda */
+    font-size: 21px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+}

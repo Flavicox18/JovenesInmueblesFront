@@ -1,9 +1,9 @@
-.main {
-  position: relative; /* Establece la posición relativa para permitir el posicionamiento absoluto del div .mainOpc */
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
+  .main {
+    position: relative; /* Establece la posición relativa para permitir el posicionamiento absoluto del div .mainOpc */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
 
 .main img {
   width: 100%;
