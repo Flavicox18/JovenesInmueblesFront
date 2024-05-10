@@ -1,20 +1,20 @@
 .main-container {
-  display: flex; /* Use flexbox to layout image and content containers */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-/* Estilos para el contenedor principal */
+
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
   background-color: rgb(255, 255, 255);
 }
 
-/* Estilos para la imagen */
+
 .image-container {
-  width: 30%; /* Ancho de la imagen */
-  margin-right: 20px; /* Margen a la derecha para separar la imagen del contenido */
+  width: 30%;
+  margin-right: 20px;
 
   flex-direction: row;
 }
@@ -25,12 +25,12 @@
 
 .image img {
   width: 100%;
-  height: auto; /* Altura automática para mantener la proporción */
+  height: auto;
 }
 
-/* Estilos para el contenido */
+
 .content {
-  width: 60%; /* Ancho del contenido */
+  width: 60%;
   text-align: center;
 }
 
@@ -49,48 +49,50 @@
   left: 38%;
   font-size: 100%;
   max-width: 450px;
-  font-weight: bold; /* Texto en negrita */
+  font-weight: bold;
 }
 
-/* Estilos para el contenedor de las publicaciones */
+
 .publicaciones-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que las publicaciones se envuelvan en varias líneas */
+  flex-wrap: wrap;
 }
 
-/* Estilos para cada publicación */
+
 .publicacion {
-  width: calc(50% - 20px); /* El ancho de cada publicación es el 50% del contenedor con un margen de 20px */
-  margin: 10px; /* Margen entre las publicaciones */
+  width: calc(50% - 20px);
+  margin: 10px;
 }
 
-/* Estilos para las imágenes, estado y botón en cada publicación */
+
 .publicacion img,
 .publicacion .estado,
 .publicacion .ver-button {
-  width: 100%; /* Ajusta el ancho para que ocupe todo el espacio disponible en cada columna */
+  width: 100%;
 }
 
-/* Estilo específico para el estado "Live" */
+
 .publicacion .estado {
-  color: rgb(0, 255, 0); /* Cambia el color del estado a verde */
+  color: rgb(0, 255, 0);
 }
 
-/* Estilo para el botón "Ver" */
+
 .ver-button {
   cursor: pointer;
 }
 
+.ver-button:hover{
+  background-color: royalblue;
+}
 
 
-/* Image container styles */
+
 .image-container {
-  width: 125%; /* Ancho de la imagen */
-  margin-right: 0px; /* Margen a la derecha para separar la imagen del contenido */
+  width: 125%;
+  margin-right: 0px;
   background-color: rgb(255, 255, 255);
   margin-left: 20px;
   margin-top: 20px;
-
 }
 
 .image {
@@ -99,47 +101,47 @@
 
 .image img {
   width: 100%;
-  height: auto; /* Altura automática para mantener la proporción */
+  height: auto;
 }
 
-/* Content container styles */
+
 .content-container {
-  width: 70%; /* Ancho del contenido */
-  padding-left: 20px; /* Add some padding to separate from image container */
+  width: 70%;
+  padding-left: 20px;
 }
 
 .content {
   text-align: center;
 }
 
-/* Estilos para los rectángulos */
+
 .rectangle {
-  width: 45%; /* Ancho del rectángulo */
-  height: 150px; /* Altura del rectángulo */
-  background-color: rgb(243, 226, 152); /* Color de fondo del rectángulo */
-  margin-top: 30px; /* Espacio superior entre los rectángulos */
+  width: 45%;
+  height: 150px;
+  background-color: rgb(243, 226, 152);
+  margin-top: 30px;
   margin-right: 200px;
   border-radius: 20px;
 }
 
 .rectangle p {
-  text-align: center; /* Centrar el texto dentro del rectángulo */
+  text-align: center;
   font-weight: bold;
 }
 
 
-/* Estilos para los rectángulos */
+
 .rectangle2 {
-  width: 45%; /* Ancho del rectángulo */
-  height: 150px; /* Altura del rectángulo */
-  background-color: rgb(243, 226, 152); /* Color de fondo del rectángulo */
-  margin-top: -150px; /* Espacio superior entre los rectángulos */
+  width: 45%;
+  height: 150px;
+  background-color: rgb(243, 226, 152);
+  margin-top: -150px;
 margin-left: 380px;
 border-radius: 20px;
 }
 
 .rectangle2 p {
-  text-align: center; /* Centrar el texto dentro del rectángulo */
+  text-align: center;
   font-weight: bold;
 
 }

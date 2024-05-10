@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Propiedades</title>
+    <link rel="stylesheet" href="agregarGaleria.component.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Propiedades</h1>
+        <div class="header-buttons">
+          <button type="button" class="header-button left-button">Contenido de la propiedad</button>
+          <button type="button" class="header-button right-button">Galería de la propiedad</button>
+      </div>
+        <div class="gallery">
+            <h2>Galería de la propiedad</h2>
+            <p>Añade hasta 10 imágenes.</p>
+            <p>La primera imagen es la imagen principal que representará al inmueble.</p>
+            <input type="file" id="imageUpload" accept="image/*" multiple onchange="previewImages()">
+            <div class="images-preview" id="imagePreview"></div>
+            <img src="../../../assets/img/casas.png" alt="Imagen de Propiedad Ejemplo">
+            <img src="../../../assets/img/casas.png" alt="Imagen de Propiedad Ejemplo">
+
+        </div>
+         <button type="button" class="header-button">Guardar propiedad</button>
+    </div>
+    <script>
+        function previewImages() {
+            var preview = document.querySelector('#imagePreview');
+            preview.innerHTML = '';
+            if (this.files) {
+                [].forEach.call(this.files, readAndPreview);
+            }
+
+            function readAndPreview(file) {
+                // Asegúrate de que `file.type` sea una imagen válida
+                if (!file.type.startsWith('image/')){
+                    return;
+                }
+
+                var reader = new FileReader();
+
+                reader.onload = function(event) {
+                    var img = new Image();
+                    img.src = event.target.result;
+                    img.style.height = '100px';  // Establece el tamaño deseado
+                    img.style.width = '100px';
+                    preview.appendChild(img);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+

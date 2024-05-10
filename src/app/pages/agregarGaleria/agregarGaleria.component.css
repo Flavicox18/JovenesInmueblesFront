@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fcfcfc;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+h1, h2 {
+  color: #333;
+  font-size: 24px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.gallery {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: left;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+input[type="file"] {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.images-preview {
+  display: grid; /* Use grid instead of flex to better manage the layout */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Creates columns that adapt to available space */
+  grid-gap: 5px; /* Reduced gap for a tighter collage effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.images-preview img {
+  width: 100%; /* Full width of the cell to avoid gaps */
+  max-height: 100px; /* Fixed max-height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: 20px;
+}
+
+.header-button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: #012169;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header-button:hover {
+  background-color: #838586;
+}
+
+
+
