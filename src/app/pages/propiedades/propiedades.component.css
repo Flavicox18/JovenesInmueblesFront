@@ -1,0 +1,59 @@
+.card {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.property-image {
+  width: 100%;
+  max-height: 225px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.detalles {
+  display: flex;
+  gap: 15px;
+  margin: 5px auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalleItem {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.detalleItem img {
+  width: 25px;
+  vertical-align: middle;
+}
+
+.direccion {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
