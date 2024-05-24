@@ -2,76 +2,34 @@
 
 <div class="container">
   <h2>Agregue la Información 📙</h2>
-  <form [formGroup]="agentForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="nombres">Nombres</label>
-      <input type="text" id="nombres" name="nombres" formControlName="nombres">
-      <div *ngIf="agentForm.get('nombres').errors?.required && agentForm.get('nombres').touched">
-        Nombres son requeridos
-      </div>
-      <div *ngIf="agentForm.get('nombres').errors?.maxlength && agentForm.get('nombres').touched">
-        Máximo 30 caracteres permitidos
-      </div>
+      <input type="text" maxlength="30" id="nombres" name="nombres" formControlName="nombres">
     </div>
     <div class="form-group">
       <label for="apellidos">Apellidos</label>
-      <input type="text" id="apellidos" name="apellidos" formControlName="apellidos">
-      <div *ngIf="agentForm.get('apellidos').errors?.required && agentForm.get('apellidos').touched">
-        Apellidos son requeridos
-      </div>
-      <div *ngIf="agentForm.get('apellidos').errors?.maxlength && agentForm.get('apellidos').touched">
-        Máximo 30 caracteres permitidos
-      </div>
+      <input type="text" maxlength="30" id="apellidos" name="apellidos" formControlName="apellidos">
     </div>
     <div class="form-group">
       <label for="dni">DNI</label>
       <input type="text" id="dni" name="dni" formControlName="dni">
-      <div *ngIf="agentForm.get('dni').errors?.required && agentForm.get('dni').touched">
-        DNI es requerido
-      </div>
-      <div *ngIf="agentForm.get('dni').errors?.maxlength && agentForm.get('dni').touched">
-        Máximo 8 dígitos permitidos
-      </div>
-      <div *ngIf="agentForm.get('dni').errors?.pattern && agentForm.get('dni').touched">
-        El DNI debe contener solo dígitos
-      </div>
     </div>
     <div class="form-group">
       <label for="correo">Correo Electrónico</label>
       <input type="email" id="correo" name="correo" formControlName="correo">
-      <div *ngIf="agentForm.get('correo').errors?.required && agentForm.get('correo').touched">
-        Correo electrónico es requerido
-      </div>
-      <div *ngIf="agentForm.get('correo').errors?.email && agentForm.get('correo').touched">
-        Formato de correo electrónico inválido
-      </div>
     </div>
     <div class="form-group">
       <label for="contrasena">Contraseña</label>
       <input type="password" id="contrasena" name="contrasena" formControlName="contrasena">
-      <div *ngIf="agentForm.get('contrasena').errors?.required && agentForm.get('contrasena').touched">
-        Contraseña es requerida
-      </div>
-      <div *ngIf="agentForm.get('contrasena').errors?.minlength && agentForm.get('contrasena').touched">
-        Mínimo 6 caracteres permitidos
-      </div>
-      <div *ngIf="agentForm.get('contrasena').errors?.maxlength && agentForm.get('contrasena').touched">
-        Máximo 12 caracteres permitidos
-      </div>
     </div>
     <div class="form-group">
       <label for="contacto">Número de Contacto</label>
-      <input type="text" id="contacto" name="contacto" formControlName="contacto">
-      <div *ngIf="agentForm.get('contacto').errors?.required && agentForm.get('contacto').touched">
-        Número de contacto es requerido
-      </div>
-      <div *ngIf="agentForm.get('contacto').errors?.maxlength && agentForm.get('contacto').touched">
-        Máximo 9 dígitos permitidos
-      </div>
-      <div *ngIf="agentForm.get('contacto').errors?.pattern && agentForm.get('contacto').touched">
-        El número de contacto debe contener solo dígitos
-      </div>
+      <input type="text" maxlength="9" id="contacto" name="contacto" (keypress)="onKeyPress($event)" formControlName="contacto">
     </div>
+
+
+
     <div class="form-group">
       <label for="foto">Agregar Foto</label>
       <input type="file" id="foto" name="foto" formControlName="foto">
