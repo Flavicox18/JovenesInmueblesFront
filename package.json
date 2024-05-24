@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --watch=false",
     "serve:ssr:JovenesInmueblesFront": "node dist/jovenes-inmuebles-front/server/server.mjs"
   },
   "private": true,
