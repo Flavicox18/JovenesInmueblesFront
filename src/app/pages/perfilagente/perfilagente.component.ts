@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './perfilagente.component.html',
   styleUrls: ['./perfilagente.component.css']
 })
-export default class PerfilagenteComponent implements OnInit {
+export class PerfilagenteComponent implements OnInit {
 
   constructor() { }
 

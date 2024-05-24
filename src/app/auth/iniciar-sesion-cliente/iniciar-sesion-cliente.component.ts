@@ -10,6 +10,6 @@ import {RouterLink} from "@angular/router";
   templateUrl: './iniciar-sesion-cliente.component.html',
   styleUrl: './iniciar-sesion-cliente.component.css'
 })
-export default class IniciarSesionClienteComponent {
+export class IniciarSesionClienteComponent {
 
 }

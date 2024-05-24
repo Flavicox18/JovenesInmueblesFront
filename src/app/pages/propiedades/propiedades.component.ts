@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './propiedades.component.html',
   styleUrl: './propiedades.component.css'
 })
-export default class PropiedadesComponent {
+export class PropiedadesComponent {
 
 }

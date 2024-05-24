@@ -1,81 +1,99 @@
 import { Routes } from '@angular/router';
+import {IndexComponent} from "./pages/index/index.component";
+import {RegisterComponent} from "./auth/register/register.component";
+import {IniciarSesionClienteComponent} from "./auth/iniciar-sesion-cliente/iniciar-sesion-cliente.component";
+import {IniciarSesionAgenteComponent} from "./auth/iniciar-sesion-agente/iniciar-sesion-agente.component";
+import {IniciarSesionInmobiliariaComponent} from "./auth/iniciar-sesion-inmobiliaria/iniciar-sesion-inmobiliaria.component";
+import {AgregarAgentesComponent} from "./pages/agentes/agregar-agentes/agregar-agentes.component";
+import {EditarAgentesComponent} from "./pages/agentes/editar-agentes/editar-agentes.component";
+import {GestionarAgentesComponent} from "./pages/agentes/gestionar-agentes/gestionar-agentes.component";
+import {PerfilagenteComponent} from "./pages/perfilagente/perfilagente.component";
+import {GestionarPropiedadesComponent} from "./pages/gestionarPropiedades/gestionarPropiedades.component";
+import {AgregarPropiedadesComponent} from "./pages/agregarPropiedades/agregarPropiedades.component";
+import {ModificarPropiedadesComponent} from "./pages/modificarPropiedades/modificarPropiedades.component";
+import {AgregarGaleriaComponent} from "./pages/agregarGaleria/agregarGaleria.component";
+import {PropiedadesComponent} from "./pages/propiedades/propiedades.component";
 
 export const routes: Routes = [
 
   {
     path: 'index',
     title: 'Index',
-    loadComponent: () => import('./pages/index/index.component'),
-
+    component: IndexComponent,
   },
 
   {
     path: 'register',
     title: 'Register',
-    loadComponent: () => import('./auth/register/register.component'),
+    component: RegisterComponent,
   },
   {
     path: 'IniciarSesionCliente',
     title: 'Iniciar Sesion Cliente',
-    loadComponent: ()=> import('./auth/iniciar-sesion-cliente/iniciar-sesion-cliente.component'),
+    component: IniciarSesionClienteComponent
   },
   {
     path: 'IniciarSesionAgente',
     title: 'Iniciar Sesion Agente',
-    loadComponent: ()=> import('./auth/iniciar-sesion-agente/iniciar-sesion-agente.component'),
+    component: IniciarSesionAgenteComponent
   },
   {
     path: 'IniciarSesionInmobiliaria',
     title: 'Iniciar Sesion Agente',
-    loadComponent: ()=> import('./auth/iniciar-sesion-inmobiliaria/iniciar-sesion-inmobiliaria.component'),
+    component: IniciarSesionInmobiliariaComponent
   },
   {
     path: 'AgregarAgentes',
     title: 'Agregar Agentes',
-    loadComponent: ()=> import('./pages/agentes/agregar-agentes/agregar-agentes.component'),
+    component: AgregarAgentesComponent
   },
   {
     path: 'EditarAgentes',
     title: 'Editar Agentes',
-    loadComponent: ()=> import('./pages/agentes/editar-agentes/editar-agentes.component'),
+    component: EditarAgentesComponent
   },
   {
     path: 'GestionarAgentes',
     title: 'Gestionar Agentes',
-    loadComponent: ()=> import('./pages/agentes/gestionar-agentes/gestionar-agentes.component'),
+    component: GestionarAgentesComponent
   },
   {
     path: 'perfilAgente',
     title: 'Perfil Agente',
-    loadComponent: () => import('./pages/perfilagente/perfilagente.component'),
+    component: PerfilagenteComponent
   },
 
   {
     path: 'gestionarPropiedades',
     title: 'Gestionar Propiedades',
-    loadComponent: () => import('./pages/gestionarPropiedades/gestionarPropiedades.component'),
+    component: GestionarPropiedadesComponent
   },
 
   {
     path: 'agregarPropiedades',
     title: 'Agregar Propiedades',
-    loadComponent: () => import('./pages/agregarPropiedades/agregarPropiedades.component'),
+    component: AgregarPropiedadesComponent
   },
 
   {
     path: 'modificarPropiedades',
     title: 'Modificar Propiedades',
-    loadComponent: () => import('./pages/modificarPropiedades/modificarPropiedades.component'),
+    component: ModificarPropiedadesComponent
   },
   {
     path: 'agregarGaleria',
     title: 'Modificar Propiedades Galería',
-    loadComponent: () => import('./pages/agregarGaleria/agregarGaleria.component'),
+    component: AgregarGaleriaComponent
   },
   {
     path: 'propiedades',
     title: 'Propiedades',
-    loadComponent: ()=> import('./pages/propiedades/propiedades.component')
+    component: PropiedadesComponent
+  },
+  {
+    path: 'AgregarAgentes',
+    title: 'Agregar Agentes',
+    component: AgregarAgentesComponent
   },
   {
     path: '',

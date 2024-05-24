@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-gestionarPropiedades',
@@ -7,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './gestionarPropiedades.component.html',
   styleUrls: ['./gestionarPropiedades.component.css']
 })
-export default class GestionarPropiedadesComponent implements OnInit {
+export class GestionarPropiedadesComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

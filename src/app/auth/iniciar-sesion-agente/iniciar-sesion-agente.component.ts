@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
   templateUrl: './iniciar-sesion-agente.component.html',
   styleUrl: './iniciar-sesion-agente.component.css'
 })
-export default class IniciarSesionAgenteComponent {
+export class IniciarSesionAgenteComponent {
 
 }

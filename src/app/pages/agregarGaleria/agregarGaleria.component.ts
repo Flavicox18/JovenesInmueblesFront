@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-agregarGaleria',
@@ -7,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './agregarGaleria.component.html',
   styleUrls: ['./agregarGaleria.component.css']
 })
-export default class AgregarGaleriaComponent implements OnInit {
+export class AgregarGaleriaComponent  {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

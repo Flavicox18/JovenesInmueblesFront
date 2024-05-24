@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './editar-agentes.component.html',
   styleUrl: './editar-agentes.component.css'
 })
-export default class EditarAgentesComponent {
+export class EditarAgentesComponent {
 
 }

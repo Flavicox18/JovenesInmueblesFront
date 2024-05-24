@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './gestionar-agentes.component.html',
   styleUrl: './gestionar-agentes.component.css'
 })
-export default class GestionarAgentesComponent {
+export class GestionarAgentesComponent {
 
 }

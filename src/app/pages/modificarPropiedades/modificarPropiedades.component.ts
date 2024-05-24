@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-modificarPropiedades',
@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './modificarPropiedades.component.html',
   styleUrls: ['./modificarPropiedades.component.css']
 })
-export default class ModificarPropiedadesComponent implements OnInit {
+export class ModificarPropiedadesComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }

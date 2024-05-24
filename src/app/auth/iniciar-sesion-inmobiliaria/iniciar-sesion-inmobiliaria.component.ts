@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './iniciar-sesion-inmobiliaria.component.html',
   styleUrl: './iniciar-sesion-inmobiliaria.component.css'
 })
-export default class IniciarSesionInmobiliariaComponent {
+export class IniciarSesionInmobiliariaComponent {
 
 }
